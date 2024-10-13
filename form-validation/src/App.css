@@ -1,0 +1,122 @@
+:root {
+  --color1:#ffffff;
+  --color2:#3e86d4 ;
+  --color3:rgb(181, 209, 234);
+  --color4:#090808;
+  --bg_color:aliceblue;
+  --font1:  "Montserrat", sans-serif;
+  --font2:  "Oswald", sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--font1);
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: var(--color2);
+}
+p{
+  margin-bottom: 10px;
+}
+ul{
+  list-style: none;
+  margin-left: 20px;
+}
+h2.main-title {
+  display: block;
+  position: relative;
+  font-size: 25px;
+  color: var(--color2);
+}
+
+h2.main-title:before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background: var(--color2);
+  top: 37px;
+}
+.content{
+  display: block;
+  position: relative;
+  padding: 40px 10% ;
+  }
+
+  .allGood {
+    display: block;
+    position: relative;
+    background: lightblue;
+    padding: 20px;
+    text-align: center;
+    margin: 40px 10%;
+    border-radius: 20px;
+    color: #000;
+}
+.allGood p{
+  background-color: lightblue;
+  color: var(--color2);
+  font-size: 20px;
+}
+/**************/
+form.formulaire {
+  display: block;
+  position: relative;
+}
+form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+}
+form .form-group span {
+  font-size: 13px;
+  display: block;
+  padding: 0 0 5px 0;
+  color: #878484;
+}
+form .form-group input ,form .form-group textarea  {
+  padding: 8px 5px;
+  border: 2px solid #eee;
+  outline: none;
+  color: var(--color4);
+  border-radius: 5px;
+  width: 100%;
+}
+input.acceptCondition {
+  width: fit-content !important;
+}
+form .form-group textarea {
+  height: 150px;
+}
+
+.form-group input:active ,.form-group input:focus ,form .form-group textarea:focus ,form .form-group textarea:active {
+  border: 2px solid var(--color2);
+  color: #090808;
+  background: transparentp;
+}
+
+form input.btn-principal, .btn-principal , .btn-principal a{
+  position: relative;
+  width: fit-content;
+  padding: 7px 13px;
+  background: var(--color2);
+  color: var(--color1);
+  transition: all .3s linear;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  margin: 5px 10px 0 0;
+}
+form input.btn-principal:hover ,.btn-principal:hover{
+  border-color: var(--color3);
+  background: #3e86d4d6;
+}
